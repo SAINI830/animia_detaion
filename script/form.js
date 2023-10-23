@@ -13,7 +13,7 @@ form.addEventListener("submit", function (event) {
 
     const dataObj = [gender, hemoglobin, mch, mchc, mcv];
 
-    fetch("http://127.0.0.1:5000/api/predict", {
+    fetch("https://animia.herokuapp.com/api/predict", {
         method: "POST",
         body: JSON.stringify({ data: dataObj }),
         headers: {
